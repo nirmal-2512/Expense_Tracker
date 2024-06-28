@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css01.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>Income</h3>
+                <p id="income-amount">Rs. 0.00</p>
+            </div>
+            <div class="card">
+                <h3>Expenses</h3>
+                <p id="expense-amount">Rs. 0.00</p>
+            </div>
+            <div class="card">
+                <h3>Balance</h3>
+                <p id="balance-amount">Rs. 0.00</p>
+            </div>
+        </section>
+
+        <section class="add-transaction">
+            <h3>Add Transaction</h3>
+            <form id="transaction-form">
+                <select id="transaction-type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input type="number" id="transaction-amount" placeholder="Amount" required>
+                <input type="text" id="transaction-category" placeholder="Category" required>
+                <input type="text" id="transaction-description" placeholder="Description">
+                <input type="date" id="transaction-date" required>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section class="trans-list">
+            <h3>Transaction List</h3>
+            <ul id="trans-list"></ul>
+        </section>
+
+        <section class="filter">
+            <h3>Filter Transactions</h3>
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="text" id="filter-category" placeholder="Category">
+            <input type="date" id="filter-date">
+            <button id="apply-filter">Apply Filter</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

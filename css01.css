@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecd8be;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container{
+    width: 100vw;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .header {
+    border-radius: 100px;
+    background: #dd2727;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+    
+  }
+  
+  .add-transaction {
+    margin: 20px 0;
+  }
+  
+  .add-transaction form input, .add-transaction form select, .add-transaction form button {
+    display: block;
+    width: 90vw;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  
+  .trans-list {
+    margin: 20px 0;
+  }
+  
+  .trans-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .trans-list li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter {
+    margin: 20px 0;
+  }
+  
+  .filter select, .filter input, .filter button {
+    display: block;
+    width: 90vw;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .dashboard{
+        flex-direction: column;
+    }
+    .card{
+        width: 80vw;
+        margin: 20px 20px;
+    }
+  }
+
+  button{
+    background-color: rgba(215, 95, 93, 0.634);
+
+  }
+  button:hover{
+    background-color: #eb5656;
+  }
